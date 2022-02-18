@@ -24,7 +24,9 @@ pip install pygeotools
 pip install demcoreg
 pip install imview
 ```
-3. Chemin des paramètres<br/>
+
+## How to use
+1. Chemin des paramètres<br/>
 Ouvir le fichier settings.sh et y renseigner les chemins des dépendances précedements installées. Ajouter aussi le chemin du dossier contenant les images (ex : ./2021-04-03_SouthOrkney_ANT sur l'exemple ci-dessous).<br/>
 ```
 .
@@ -40,7 +42,30 @@ Ouvir le fichier settings.sh et y renseigner les chemins des dépendances préce
 Le nom des MNS crées seront donnés selon le nom du dossier regroupant les images panchromatiques et multispectrales. Ici : 2021-04-03_12226435_SouthOrkney_ANT_DEM_BM_2m.tif et 2021-04-03_12226435_SouthOrkney_ANT_DEM_BM_20m.tif pour les MNS.
 
 
-4. Lancer le script 
+2. Lancer le script 
 ```
 DEM_coregistration.sh
 ```
+Un nouveau dossier est alors crée au nom de l'algorithme de corrélation utilisé (BM ou SGM) contenant les MNS et ortho-images associées. 
+
+```
+.
+├── ...
+├── 2021-04-03_12226435_SouthOrkney_ANT   
+│   ├── IMG_PHR1B_P_001          
+│   ├── IMG_PHR1B_P_002          
+│   ├── IMG_PHR1B_MS_003         
+│   ├── IMG_PHR1B_MS_004         
+│   └── BM   
+│       ├── 2021-04-03_12226435_SouthOrkney_ANT_DEM_BM_2m.tif  
+│       ├── 2021-04-03_12226435_SouthOrkney_ANT_DEM_BM_20m.tif   
+│       ├── 2021-04-03_12226435_SouthOrkney_ANT_PAN_BM_0.5m.tif  
+│       └── 2021-04-03_12226435_SouthOrkney_ANT_MS_BM_2m.tif 
+└── ...
+```
+
+
+
+
+
+
