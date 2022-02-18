@@ -6,7 +6,16 @@ Ces données sont coregistré selon un MNT de référence (ex : Global Copernicu
 
 ## Installation
 Le bon fonctionnement du script nécessite l'instalation des dépendences suivantes : 
- - The Ames Stereo Pipeline (https://ti.arc.nasa.gov/tech/asr/groups/intelligent-robotics/ngt/stereo/) for the photogrammetric steps.
- - Orfeo Tool Box (https://www.orfeo-toolbox.org/) for image manipulation.
+ - L'outil Ames Stereo Pipeline (https://ti.arc.nasa.gov/tech/asr/groups/intelligent-robotics/ngt/stereo/) pour le processus photogrammétrique.
+ - Orfeo Tool Box (https://www.orfeo-toolbox.org/) pour la manipulation des images.
+ - Demcoreg (https://github.com/dshean/demcoreg) pour la coregistration.
 
-## How to use
+## Fonctionnement
+
+1. Installer miniconda
+```
+chmod +x Miniconda3-latest-Linux-x86_64.sh
+Miniconda3-latest-Linux-x86_64.sh
+```
+
+
