@@ -4,13 +4,12 @@ Script permettant de calculer un modèle numérique de surface (MNS) à partir d
 Ces données sont coregistré selon un MNT de référence (ex : Global Copernicus DEM) par la méthode développée par Nuth and Kaab. 
 
 
-## Installation
-Le bon fonctionnement du script nécessite l'instalation des dépendences suivantes : 
+## Téléchargements
+Le bon fonctionnement du script nécessite le téléchargement des outils suivants : 
  - L'outil Ames Stereo Pipeline (https://ti.arc.nasa.gov/tech/asr/groups/intelligent-robotics/ngt/stereo/) pour le processus photogrammétrique.
  - Orfeo Tool Box (https://www.orfeo-toolbox.org/) pour la manipulation des images.
- - Demcoreg (https://github.com/dshean/demcoreg) pour la coregistration.
 
-## Fonctionnement
+## Installation
 
 1. Installer miniconda
 ```
