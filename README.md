@@ -24,4 +24,5 @@ pip install pygeotools
 pip install demcoreg
 pip install imview
 ```
-
+2. Chemin des dépendances
+Ouvir le fichier link_dependencies.sh du dossier dépendances et renseigner les chemins des dépendances précedements installées (cf exemple en fichier link_dependencies_exemple.sh)
