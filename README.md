@@ -17,5 +17,11 @@ Le bon fonctionnement du script nécessite l'instalation des dépendences suivan
 chmod +x Miniconda3-latest-Linux-x86_64.sh
 Miniconda3-latest-Linux-x86_64.sh
 ```
-
+2. Installer les dépendances
+```
+conda install gdal
+pip install pygeotools
+pip install demcoreg
+pip install imview
+```
 
