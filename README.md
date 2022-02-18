@@ -25,7 +25,7 @@ pip install demcoreg
 pip install imview
 ```
 3. Chemin des paramètres<br/>
-Ouvir le fichier settings.sh du dossier settings et y renseigner les chemins des dépendances précedements installées. Ajouter aussi le chemin du dossier contenant les images (ex : ./2021-04-03_SouthOrkney_ANT sur l'exemple ci-dessous).<br/>
+Ouvir le fichier settings.sh et y renseigner les chemins des dépendances précedements installées. Ajouter aussi le chemin du dossier contenant les images (ex : ./2021-04-03_SouthOrkney_ANT sur l'exemple ci-dessous).<br/>
 ```
 .
 ├── ...
