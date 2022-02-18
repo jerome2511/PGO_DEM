@@ -11,7 +11,8 @@ Le bon fonctionnement du script nécessite le téléchargement des outils suivan
 
 ## Installation
 
-1. Installer miniconda
+1. Installer miniconda<br/>
+Après avoir téléchargé la dernière version de miniconda (https://docs.conda.io/en/latest/miniconda.html), executer le fichier d'installation.
 ```
 chmod +x Miniconda3-latest-Linux-x86_64.sh
 Miniconda3-latest-Linux-x86_64.sh
