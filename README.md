@@ -24,5 +24,10 @@ pip install pygeotools
 pip install demcoreg
 pip install imview
 ```
-2. Chemin des dépendances
-Ouvir le fichier link_dependencies.sh du dossier dépendances et renseigner les chemins des dépendances précedements installées (cf exemple en fichier link_dependencies_exemple.sh)
+3. Chemin des paramètres
+Ouvir le fichier parametres.sh du dossier dépendances et renseigner les chemins des dépendances précedements installées ainsi que le chemin des dossiers images (cf exemple en fichier parametres_exemple.sh)
+
+4. Lancer le script 
+```
+DEM_coregistration.sh
+```
