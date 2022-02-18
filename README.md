@@ -23,7 +23,7 @@ pip install pygeotools
 pip install demcoreg
 pip install imview
 ```
-3. Chemin des paramètres
+3. Chemin des paramètres<br/>
 Ouvir le fichier parametres.sh du dossier dépendances et renseigner les chemins des dépendances précedements installées ainsi que le chemin des dossiers images (cf exemple en fichier parametres_exemple.sh)
 
 4. Lancer le script 
