@@ -24,19 +24,20 @@ pip install demcoreg
 pip install imview
 ```
 3. Chemin des paramètres<br/>
-Ouvir le fichier parametres.sh du dossier dépendances et renseigner les chemins des dépendances précedements installées ainsi que le chemin des dossiers images (ex : ./2021-04-03_SouthOrkney_ANT).<br/>
-Le nom des MNS crées seront donnés selon le nom du dossier regroupant les images panchromatiques et multispéctrales. 
-
+Ouvir le fichier settings.sh du dossier settings et y renseigner les chemins des dépendances précedements installées. Ajouter aussi le chemin du dossier contenant les images (ex : ./2021-04-03_SouthOrkney_ANT sur l'exemple ci-dessous).<br/>
 ```
 .
 ├── ...
-├── 2021-04-03_SouthOrkney_ANT   # Repertory wich is linked to the script
+├── 2021-04-03_12226435_SouthOrkney_ANT   # Repertory wich is linked to the script
 │   ├── IMG_PHR1B_P_001          # Repertory with first panchromatic image files
 │   ├── IMG_PHR1B_P_002          # Repertory with second panchromatic image files
 │   ├── IMG_PHR1B_MS_003         # Repertory with first multispectral image files
 │   └── IMG_PHR1B_MS_004         # Repertory with second multispectral image files
 └── ...
 ```
+
+Le nom des MNS crées seront donnés selon le nom du dossier regroupant les images panchromatiques et multispectrales. Ici : 2021-04-03_12226435_SouthOrkney_ANT_DEM_BM_2m.tif et 2021-04-03_12226435_SouthOrkney_ANT_DEM_BM_20m.tif pour les MNS.
+
 
 4. Lancer le script 
 ```
