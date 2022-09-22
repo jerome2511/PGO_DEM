@@ -26,7 +26,7 @@ pip install demcoreg
 pip install imview
 ```
 
-## How to use
+## DEM and ortho-omage calculation
 1. Parameter<br/>
 Open the settings.sh file and fill in the paths of ASP, OTB and anaconda. Add also the path of the folder containing the images (ex: ./2021-04-03_SouthOrkney_ANT on the example below).<br/>
 ```
@@ -40,14 +40,14 @@ Open the settings.sh file and fill in the paths of ASP, OTB and anaconda. Add al
 └── ...
 ```
 
-The name of the MNS created will be given according to the name of the folder regrouping the panchromatic and multispectral images. Here: 2021-04-03_12226435_SouthOrkney_ANT_DEM_BM_2m.tif and 2021-04-03_12226435_SouthOrkney_ANT_DEM_BM_20m.tif for the MNS.
+The name of the DEM created will be given according to the name of the folder regrouping the panchromatic and multispectral images. Here: 2021-04-03_12226435_SouthOrkney_ANT_DEM_BM_2m.tif and 2021-04-03_12226435_SouthOrkney_ANT_DEM_BM_20m.tif for the DEM.
 
 
 2. Run the script 
 ```
 stereo_coregistration.sh
 ```
-At this step a new folder is created with the name of the correlation algorithm used (BM or SGM) containing the associated DSMs and orthoimages. 
+At this step a new folder is created with the name of the correlation algorithm used (BM or SGM) containing the associated DEMs and orthoimages. 
 
 ```
 .
@@ -65,6 +65,7 @@ At this step a new folder is created with the name of the correlation algorithm 
 └── ...
 ```
 
+## Coregistration
 
 
 
