@@ -44,7 +44,7 @@ Le nom des MNS crées seront donnés selon le nom du dossier regroupant les imag
 
 2. Lancer le script 
 ```
-DEM_coregistration.sh
+stereo_coregistration.sh
 ```
 Un nouveau dossier est alors crée au nom de l'algorithme de corrélation utilisé (BM ou SGM) contenant les MNS et ortho-images associées. 
 
