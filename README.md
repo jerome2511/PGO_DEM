@@ -1,23 +1,24 @@
-# PGO_DEM
+# PGO
 
-Script permettant de calculer un modèle numérique de surface (MNS) à partir d'un couple stéréoscopique Pléiades. Par defaut, deux MNS aux résolutions spatiale de 20 m et 2 M sont produits ainsi q'une orthoimage panchromatique à 0.5 m et une orthoimage multispectrale (R-V-B-IR) à 2 m.
-Ces données sont coregistré selon un MNT de référence (ex : Global Copernicus DEM) par la méthode développée par Nuth and Kaab. 
+The Pléiades Glacier Observatory is an initiative by the French Space Agency (CNES) and the Laboratoire d'Etudes en Géophysique et Océanographie Spatiales (LEGOS) to facilitate access to high resolution data (such as digital elevation models and orthoimages) from the Pléiades satellites. Wich is a Very high resolution sensors with stereoscopic vision capacity.
+The script below generate DEMs at 20 m and 2 m using the Ames Stereo Pipeline (ASP). It also provide ortho-images at 2 m for multispectral bands and 0.5 m for the panchromatic band.
+To ensure a good consistency of the PGO database, the DEMs are coregistered in a second step to the Copernicus GLO-30 DEM using the implementation by D. Shean (https://github.com/dshean/demcoreg) of the algorithm by Nuth and Kääb (2011).
 
 
-## Téléchargements
-Le bon fonctionnement du script nécessite le téléchargement des outils suivants : 
- - L'outil Ames Stereo Pipeline (https://ti.arc.nasa.gov/tech/asr/groups/intelligent-robotics/ngt/stereo/) pour le processus photogrammétrique.
- - Orfeo Tool Box (https://www.orfeo-toolbox.org/) pour la manipulation des images.
+## Downloads
+For the script to work properly, the following tools must be downloaded: 
+ - Ames Stereo Pipeline (ASP) tool (https://ti.arc.nasa.gov/tech/asr/groups/intelligent-robotics/ngt/stereo/)  for the photogrammetric process.
+ - Orfeo Tool Box (OTB) (https://www.orfeo-toolbox.org/) for image manipulation.
 
 ## Installation
 
-1. Installer miniconda<br/>
-Après avoir téléchargé la dernière version de miniconda (https://docs.conda.io/en/latest/miniconda.html), executer le fichier d'installation.
+1. Install miniconda<br/>
+After downloading the latest version of miniconda (https://docs.conda.io/en/latest/miniconda.html), run the installation file.
 ```
 chmod +x Miniconda3-latest-Linux-x86_64.sh
 Miniconda3-latest-Linux-x86_64.sh
 ```
-2. Installer les dépendances
+2. Installing dependencies
 ```
 conda install gdal
 pip install pygeotools
@@ -26,8 +27,8 @@ pip install imview
 ```
 
 ## How to use
-1. Chemin des paramètres<br/>
-Ouvir le fichier settings.sh et y renseigner les chemins des dépendances précedements installées. Ajouter aussi le chemin du dossier contenant les images (ex : ./2021-04-03_SouthOrkney_ANT sur l'exemple ci-dessous).<br/>
+1. Parameter<br/>
+Open the settings.sh file and fill in the paths of ASP, OTB and anaconda. Add also the path of the folder containing the images (ex: ./2021-04-03_SouthOrkney_ANT on the example below).<br/>
 ```
 .
 ├── ...
@@ -39,14 +40,14 @@ Ouvir le fichier settings.sh et y renseigner les chemins des dépendances préce
 └── ...
 ```
 
-Le nom des MNS crées seront donnés selon le nom du dossier regroupant les images panchromatiques et multispectrales. Ici : 2021-04-03_12226435_SouthOrkney_ANT_DEM_BM_2m.tif et 2021-04-03_12226435_SouthOrkney_ANT_DEM_BM_20m.tif pour les MNS.
+The name of the MNS created will be given according to the name of the folder regrouping the panchromatic and multispectral images. Here: 2021-04-03_12226435_SouthOrkney_ANT_DEM_BM_2m.tif and 2021-04-03_12226435_SouthOrkney_ANT_DEM_BM_20m.tif for the MNS.
 
 
-2. Lancer le script 
+2. Run the script 
 ```
 stereo_coregistration.sh
 ```
-Un nouveau dossier est alors crée au nom de l'algorithme de corrélation utilisé (BM ou SGM) contenant les MNS et ortho-images associées. 
+At this step a new folder is created with the name of the correlation algorithm used (BM or SGM) containing the associated DSMs and orthoimages. 
 
 ```
 .
