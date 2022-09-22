@@ -26,7 +26,7 @@ pip install demcoreg
 pip install imview
 ```
 
-## DEM and ortho-omage calculation
+## DEM and ortho-image calculation
 1. Parameter<br/>
 Open the settings.sh file and fill in the paths of ASP, OTB and anaconda. Add also the path of the folder containing the images (ex: ./2021-04-03_SouthOrkney_ANT on the example below).<br/>
 ```
