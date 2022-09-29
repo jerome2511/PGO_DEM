@@ -28,7 +28,8 @@ pip install imview
 
 ## DEM and ortho-image calculation
 1. Parameter<br/>
-Open the stereo_hal_calcul_dem.sh file and fill in the paths of ASP and OTB. Add also the path of the folder containing the images (ex: ./2021-04-03_SouthOrkney_ANT on the example below).<br/>
+Open the stereo_hal_calcul_dem.sh file and fill in the paths of ASP, OTB and additional functions file. Add also the path of the folder containing the images (ex: ./2021-04-03_SouthOrkney_ANT on the example below) and the path to GLO-30 DEM.<br/>
+
 ```
 .
 ├── ...
