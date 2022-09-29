@@ -1,6 +1,6 @@
 # PGO
 
-The Pléiades Glacier Observatory is an initiative by the French Space Agency (CNES) and the Laboratoire d'Etudes en Géophysique et Océanographie Spatiales (LEGOS) to facilitate access to high resolution data from the Pléiades satellites.
+The Pléiades Glacier Observatory is an initiative by the French Space Agency (CNES) and the Laboratoire d'Etudes en Géophysique et Océanographie Spatiales (LEGOS) to facilitate access to high resolution data from Pléiades satellites.
 The script below generate DEMs at 20 m and 2 m using the Ames Stereo Pipeline (ASP). It also provide ortho-images at 2 m for multispectral bands and 0.5 m for the panchromatic band.
 To ensure a good consistency of the PGO database, the DEMs are coregistered in a second step to the Copernicus GLO-30 DEM using the implementation by D. Shean (https://github.com/dshean/demcoreg) of the algorithm by Nuth and Kääb (2011).
 
@@ -28,7 +28,7 @@ pip install imview
 
 ## DEM and ortho-image calculation
 1. Parameter<br/>
-Open the settings.sh file and fill in the paths of ASP, OTB and anaconda. Add also the path of the folder containing the images (ex: ./2021-04-03_SouthOrkney_ANT on the example below).<br/>
+Open the settings.sh file and fill in the paths of ASP and OTB. Add also the path of the folder containing the images (ex: ./2021-04-03_SouthOrkney_ANT on the example below).<br/>
 ```
 .
 ├── ...
