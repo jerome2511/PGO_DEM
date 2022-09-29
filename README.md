@@ -68,7 +68,16 @@ At this step a new folder is created with the name of the correlation algorithm 
 
 ## Coregistration
 
+1. Parameter<br/>
+Open the coregistration_DEM.sh file and fill in the paths of Anaconda bin and OTB and demcoreg folder. Add also the diffenrents path in paramters section. <br/>
 
+2. Run the script 
+```
+coregistration_DEM.sh
+```
+At this step a new folder is created (original) with the original DEMs before coregistration. New DEMs . 
+
+```
 
 
 
