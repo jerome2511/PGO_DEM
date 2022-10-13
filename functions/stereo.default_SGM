@@ -27,7 +27,7 @@ prefilter-mode 0
 #
 # Recommend 1.4 px for Laplacian of Gaussian
 # Recommend 25 px for Subtracted Mean
-prefilter-kernel-width 1.4
+#prefilter-kernel-width 1.4
 
 # Correlation Seed Mode
 # 0 - None
