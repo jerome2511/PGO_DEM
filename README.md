@@ -26,7 +26,7 @@ pip install demcoreg
 pip install imview
 ```
 
-## DEM and ortho-image calculation
+## Step 1 : DEM and ortho-image calculation
 1. Parameter<br/>
 Open the stereo_hal_calcul_dem.sh file and fill in the paths of ASP, OTB and additional functions file. Add also the path of the folder containing the images (ex: ./2021-04-03_SouthOrkney_ANT on the example below) and the path to GLO-30 DEM.<br/>
 
@@ -66,7 +66,7 @@ At this step a new folder is created with the name of the correlation algorithm 
 └── ...
 ```
 
-## Coregistration
+## Step 2 : Coregistration
 
 1. Parameter<br/>
 Open the coregistration_DEM.sh file and fill in the paths of Anaconda bin and OTB and demcoreg folder. Add also the diffenrents path in paramters section. <br/>
