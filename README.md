@@ -41,9 +41,6 @@ Open the stereo_hal_calcul_dem.sh file and fill in the paths of ASP and  OTB. Ad
 └── ...
 ```
 
-The name of the DEM created will be given according to the name of the folder regrouping the panchromatic and multispectral images. Here: 2021-04-03_12226435_SouthOrkney_ANT_DEM_BM_2m.tif and 2021-04-03_12226435_SouthOrkney_ANT_DEM_BM_20m.tif for the DEM.
-
-
 2. Run the script 
 ```
 cd PathToScript/PGO_DEM-master/
