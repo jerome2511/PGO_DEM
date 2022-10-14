@@ -73,7 +73,7 @@ Open the coregistration_DEM.sh file and fill in the paths of Anaconda bin and OT
 ```
 coregistration_DEM.sh
 ```
-At this step a new folder is created (original) with the original DEMs before coregistration. New DEMs . 
+At this step a new folder is created (original) with the original DEMs and ortho-images before coregistration. New DEMs and orthos have "shifted" as a prefix. 
 
 ```
 
