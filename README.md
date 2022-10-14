@@ -10,7 +10,7 @@ For the script to work properly, the following tools must be downloaded:
  - Ames Stereo Pipeline (ASP) tool (https://ti.arc.nasa.gov/tech/asr/groups/intelligent-robotics/ngt/stereo/)  for the photogrammetric process.
  - Orfeo Tool Box (OTB) (https://www.orfeo-toolbox.org/) for image manipulation.
 
-## Installation
+## Installation of anaconda (for coregistration, see step 2)
 
 1. Install miniconda<br/>
 After downloading the latest version of miniconda (https://docs.conda.io/en/latest/miniconda.html), run the installation file.
