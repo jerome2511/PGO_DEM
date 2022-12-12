@@ -1,8 +1,12 @@
 # PGO
 
-The Pléiades Glacier Observatory is an initiative by the French Space Agency (CNES) and the Laboratoire d'Etudes en Géophysique et Océanographie Spatiales (LEGOS) to facilitate access to high resolution data from Pléiades satellites.
-The script below generate DEMs at 20 m and 2 m using the Ames Stereo Pipeline (ASP). It also provide ortho-images at 2 m for multispectral bands and 0.5 m for the panchromatic band.
-To ensure a good consistency of the PGO database, the DEMs are coregistered in a second step to the Copernicus GLO-30 DEM using the implementation by D. Shean (https://github.com/dshean/demcoreg) of the algorithm by Nuth and Kääb (2011).
+The Pléiades Glacier Observatory (PGO) is an initiative by the French Space Agency (CNES) and the Laboratory in Geophysics and Space Oceanography (LEGOS) to facilitate access to Pléiades satellite stereo-imagery and digital elevation models (DEMs) for glaciologists.
+
+The PGO program covers 142 sites spread all over the globe with targeted acquisitions generally at the end of the melt season. The product consists of digital elevation models (DEMs) at 2 m and 20 m ground sampling distance together with 0.5 m (panchromatic) and 2 m (multispectral) ortho-images. For the photogrammetric process, the Ames Stereo Pipeline [Beyer et al., Earth and Space Science, 2018] is used with processing parameters from [Marti et al., TC, 2016] for block matching -BM- and from [Deschamps-Berger et al. TC 2020] for semi global matching -SGM. To ensure a good consistency of the PGO database, the DEMs are coregistered in a second step to the Copernicus GLO-30 DEM using the implementation by D. Shean [Shean et al., ISPRS J. Photogramm. Remote Sens, 2016] of the algorithm by Nuth and Kääb (2011).
+
+The first PGO campaigns took place in 2016 in the north Hemisphere and early 2017 in the south Hemisphere. Since 2021 in the northern Hemisphere and 2022 in the southern Hemisphere, the PGO has entered in revisit mode. Each site will be imaged again, allowing the production of elevation difference maps for each glacier every five years.
+
+More details at https://www.legos.omp.eu/pgo/
 
 
 ## Downloads
@@ -77,6 +81,14 @@ coregistration_DEM.sh
 At this step a new folder is created (original) with the original DEMs and ortho-images before coregistration. New DEMs and orthos have "shifted" as a prefix. 
 
 ```
+## To go further
 
+Beyer et al.: The Ames Stereo Pipeline: NASA's Open Source Software for Deriving and Processing Terrain Data, Earth and Space Science, 5(9), 537–548,doi:10.1029/2018EA000409, 2018.
+
+Shean et al., An automated, open-source pipeline for mass production of digital elevation models (DEMs) from very high-resolution commercial stereo satellite imagery, ISPRS J. Photogramm. Remote Sens, 116, 101-117, doi: 10.1016/j.isprsjprs.2016.03.012, 2016.
+
+Deschamps-Berger et al.: Snow depth mapping from stereo satellite imagery in mountainous terrain: evaluation using airborne laser-scanning data, The Cryosphere, 14(9),2925–2940, https://doi.org/10.5194/tc-14-2925-2020, 2020.
+
+Marti et al.: Mapping snow depth in open alpine terrain from stereo satellite imagery, The Cryosphere, 10(4), 1361–1380, doi:10.5194/tc-10-1361-2016, 2016
 
 
