@@ -7,10 +7,11 @@ To ensure a good consistency of the PGO database, the DEMs are coregistered in a
 
 ## Downloads
 For the script to work properly, the following tools must be downloaded: 
- - Ames Stereo Pipeline (ASP) tool (https://ti.arc.nasa.gov/tech/asr/groups/intelligent-robotics/ngt/stereo/)  for the photogrammetric process.
- - Orfeo Tool Box (OTB) (https://www.orfeo-toolbox.org/) for image manipulation.
+ - Ames Stereo Pipeline (ASP) tool (https://ti.arc.nasa.gov/tech/asr/groups/intelligent-robotics/ngt/stereo/)  for the photogrammetric process ;
+ - Orfeo Tool Box (OTB) (https://www.orfeo-toolbox.org/) for image manipulation ;
+ - Demcoreg tool from David Shean (https://github.com/jerome2511/PGO_DEM/blob/main/README.md)for co-registration of rasters.
 
-## Installation of anaconda (for coregistration, see step 2)
+## Installation of anaconda
 
 1. Install miniconda<br/>
 After downloading the latest version of miniconda (https://docs.conda.io/en/latest/miniconda.html), run the installation file.
@@ -28,7 +29,7 @@ pip install imview
 
 ## Step 1 : DEM and ortho-image calculation
 1. Parameter<br/>
-Open the stereo_hal_calcul_dem.sh file and fill in the paths of ASP and  OTB. Add also the path of the folder containing the images (ex: ./2021-04-03_SouthOrkney_ANT on the example below) and the path to GLO-30 DEM.<br/>
+Open the DEM_calculation.sh file and fill in the paths of ASP and  OTB. Add also the path of the folder containing the images (ex: ./2021-04-03_SouthOrkney_ANT on the example below) and the path to GLO-30 DEM (or any DEM for map projection, same DEM for coregistration).<br/>
 
 ```
 .
@@ -67,7 +68,7 @@ At this step a new folder is created with the name of the correlation algorithm 
 ## Step 2 : Coregistration
 
 1. Parameter<br/>
-Open the coregistration_DEM.sh file and fill in the paths of Anaconda bin and OTB and demcoreg folder. Add also the diffenrents path in paramters section. <br/>
+Open the coregistration_DEM.sh file and fill in the paths of Anaconda bin and OTB and demcoreg folder. Add also the differents path in paramters section. <br/>
 
 2. Run the script 
 ```
