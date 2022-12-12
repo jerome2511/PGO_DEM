@@ -13,7 +13,7 @@ More details at https://www.legos.omp.eu/pgo/
 For the script to work properly, the following tools must be downloaded: 
  - Ames Stereo Pipeline (ASP) tool (https://ti.arc.nasa.gov/tech/asr/groups/intelligent-robotics/ngt/stereo/)  for the photogrammetric process ;
  - Orfeo Tool Box (OTB) (https://www.orfeo-toolbox.org/) for image manipulation ;
- - Demcoreg tool from David Shean (https://github.com/jerome2511/PGO_DEM/blob/main/README.md)for co-registration of rasters.
+ - Demcoreg tool from David Shean (https://github.com/jerome2511/PGO_DEM/blob/main/README.md) for co-registration of rasters.
 
 ## Installation of anaconda
 
@@ -80,7 +80,6 @@ coregistration_DEM.sh
 ```
 At this step a new folder is created (original) with the original DEMs and ortho-images before coregistration. New DEMs and orthos have "shifted" as a prefix. 
 
-```
 ## To go further
 
 Beyer et al.: The Ames Stereo Pipeline: NASA's Open Source Software for Deriving and Processing Terrain Data, Earth and Space Science, 5(9), 537–548,doi:10.1029/2018EA000409, 2018.
