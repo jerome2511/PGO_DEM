@@ -28,7 +28,7 @@ pip install imview
 
 ## Step 1 : DEM and ortho-image calculation
 1. Parameter<br/>
-Open the DEM_calculation.sh file and fill in the paths of ASP and  OTB (Section "Path to dependencies"). Add also the path of the folder containing the images (ex: ./2021-04-03_SouthOrkney_ANT on the example below) and the path to GLO-30 DEM or another reference DEM(section "Parameters").<br/>
+Open the DEM_calculation.sh file and fill in the paths of ASP and  OTB (section "Path to dependencies"). Add also the path of the folder containing the images (ex: ./2021-04-03_SouthOrkney_ANT on the example below) and the path to GLO-30 DEM or another reference DEM (section "Parameters").<br/>
 
 ```
 .
@@ -75,7 +75,6 @@ coregistration_DEM.sh
 ```
 At this step a new folder is created (original) with the original DEMs and ortho-images before coregistration. New DEMs and orthos have "shifted" as a prefix. 
 
-```
 
 
 
