@@ -78,8 +78,7 @@ At this step a new folder is created (original) with the original DEMs and ortho
 
 ## Step 3 : Elevation difference biais corrections
 
-1. Stand alone python file<br/>
-After installing xDEM (https://xdem.readthedocs.io/en/stable/how_to_install.html), fill in the parameters section with your configuration. The processing can be quite consuming for large data with small spatial resolution. At the end of the script a figure is saved with some statistics<br/>
+After installing xDEM (https://xdem.readthedocs.io/en/stable/how_to_install.html), open the DH_MAP_bias_correction.py file and fill in the parameters section with your configuration. The processing can be quite consuming for large data with small spatial resolution. At the end of the script a figure is saved with some statistics<br/>
 
 
 
