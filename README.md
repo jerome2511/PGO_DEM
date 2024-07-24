@@ -2,15 +2,16 @@
 
 The Pléiades Glacier Observatory is an initiative by the French Space Agency (CNES) and the Laboratoire d'Etudes en Géophysique et Océanographie Spatiales (LEGOS) to facilitate access to high resolution data from Pléiades satellites.
 The script below generate DEMs at 20 m and 2 m using the Ames Stereo Pipeline (ASP). It also provide ortho-images at 2 m for multispectral bands and 0.5 m for the panchromatic band.
-To ensure a good consistency of the PGO database, the DEMs are coregistered in a second step to the Copernicus GLO-30 DEM using the implementation by D. Shean (https://github.com/dshean/demcoreg) of the algorithm by Nuth and Kääb (2011).
+To ensure a good consistency of the PGO database, the DEMs are coregistered in a second step to the Copernicus GLO-30 DEM using the implementation by D. Shean (https://zenodo.org/records/7730376) of the Nuth and Kääb algorithm (2011).
 
 
 ## Downloads
 For the script to work properly, the following tools must be downloaded: 
- - Ames Stereo Pipeline (ASP) tool (https://ti.arc.nasa.gov/tech/asr/groups/intelligent-robotics/ngt/stereo/) for the photogrammetric process.
- - Orfeo Tool Box (OTB) (https://www.orfeo-toolbox.org/) for image manipulation.
+ - Ames Stereo Pipeline (ASP) tool (https://ti.arc.nasa.gov/tech/asr/groups/intelligent-robotics/ngt/stereo/) for the photogrammetric process ;
+ - Orfeo Tool Box (OTB) (https://www.orfeo-toolbox.org/) for image manipulation ;
+ - Demcoreg (https://zenodo.org/records/7730376) for co-registration of rasters.
 
-## Installation of anaconda (for coregistration, see step 2)
+## Installation of anaconda (used for coregistration in step 2)
 
 1. Install miniconda<br/>
 After downloading the latest version of miniconda (https://docs.conda.io/en/latest/miniconda.html), run the installation file.
@@ -74,6 +75,13 @@ Open the DEM_coregistration.sh file and fill in the paths of Anaconda bin and OT
 coregistration_DEM.sh
 ```
 At this step a new folder is created (original) with the original DEMs and ortho-images before coregistration. New DEMs and orthos have "shifted" as a prefix. 
+
+## Step 3 : Elevation difference biais corrections
+
+1. Stand alone python file<br/>
+After installing xDEM (https://xdem.readthedocs.io/en/stable/how_to_install.html), fill in the parameters section with your configuration. The processing can be quite consuming for large data with small spatial resolution. At the end of the script a figure is saved with some statistics<br/>
+
+
 
 
 
