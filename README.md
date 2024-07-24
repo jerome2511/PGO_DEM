@@ -76,7 +76,7 @@ coregistration_DEM.sh
 ```
 At this step a new folder is created (original) with the original DEMs and ortho-images before coregistration. New DEMs and orthos have "shifted" as a prefix. 
 
-## Step 3 : Elevation difference biais corrections
+## Step 3 : Bias corrections for elevation difference data
 
 After installing xDEM (https://xdem.readthedocs.io/en/stable/how_to_install.html), open the DH_MAP_bias_correction.py file and fill in the parameters section with your configuration. The processing can be quite consuming for large data with small spatial resolution. At the end of the script a figure is saved with some statistics<br/>
 
